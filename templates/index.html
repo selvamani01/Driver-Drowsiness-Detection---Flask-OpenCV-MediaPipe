@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver Drowsiness Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🚗 Driver Drowsiness Detection</h1>
+        <p>Real-time AI Monitoring System</p>
+    </header>
+
+    <div class="dashboard">
+
+        <!-- Video Section -->
+        <div class="card video-card">
+            <h2>Live Camera</h2>
+            <img src="{{ url_for('video') }}" class="video-feed">
+        </div>
+
+        <!-- Status Section -->
+        <div class="card status-card">
+            <h2>Status</h2>
+            <div class="status-box normal" id="statusBox">
+                Monitoring...
+            </div>
+
+            <h3>System Info</h3>
+            <ul>
+                <li>AI Model: FaceMesh + EAR</li>
+                <li>Mode: Real-Time</li>
+                <li>Alert: Audio Beep</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>AI Powered Safety System • Built with Flask + OpenCV + MediaPipe</p>
+    </footer>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

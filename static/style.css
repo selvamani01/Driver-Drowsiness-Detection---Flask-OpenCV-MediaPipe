@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* Layout */
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+header p {
+    color: #ccc;
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Cards */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    width: 420px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Video */
+.video-feed {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #00e6e6;
+}
+
+/* Status */
+.status-box {
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.normal {
+    background: #2ecc71;
+}
+
+.alert {
+    background: #e74c3c;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    color: #bbb;
+    font-size: 14px;
+}
